@@ -2,19 +2,23 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
-export default function UserDetails({data}) {
+export default function UserDetails({results}) {
     const { id } = useParams();
 
-    const user = getUser();
+    const [user, setUser] = useState()
+
+    useEffect(() => {
+        const foundUser = getUser()
+        setUser(foundUser)       
+    }, [id])
 
     function getUser() {
-        return data.find((c) => c.name.first === id);
+        return results.find((item) => item.id.value === id)
     }
     
     return (
         <div>
-            <h2>{id}</h2>
-             <h1>{user.name.first}</h1>
+            
         </div>
     )
 }

@@ -2,16 +2,7 @@ import { useEffect, useState } from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom"
 
-const AddressBook = () => {
-    const [results, setResults] = useState([])
-    useEffect(() => {
-        axios.get("https://randomuser.me/api/?results=5")
-         .then(res => {
-             console.log(res.data.results)
-             setResults(res.data.results)
-         })
-         .catch(err => console.log(err))
-    }, [])
+const AddressBook = ({results}) => {
 
     return (
         <>     
@@ -20,7 +11,7 @@ const AddressBook = () => {
             {results.map((d, i) => (
                 <ul>
                     <h3 key={i}>
-                        <Link to={'/userDetails'}>{d.name.first} {d.name.last}</Link>
+                        <Link to={`/userDetails/${d.id.value}`}>{d.name.first} {d.name.last}</Link>
                     </h3>
                 </ul>
             ))}
