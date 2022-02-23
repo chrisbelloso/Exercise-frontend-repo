@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(51, 50, 50);
+}
+
+.title {
+  margin-left: 20px;
+  color: white;
+}
+
+.legend {
+  margin-left: 40px;
+  color: white;
+}
+
+.userLink a {
+  color: rgb(169, 78, 255);
+}

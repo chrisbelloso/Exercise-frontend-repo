@@ -1,7 +1,11 @@
+// IMPORTS
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { Link } from "react-router-dom";
 
+import './UserDetails.css'
+
+
+// FUNCTION
 export default function UserDetails({results}) {
     const { id } = useParams();
 
@@ -13,12 +17,16 @@ export default function UserDetails({results}) {
     }, [id])
 
     function getUser() {
-        return results.find((item) => item.id.value === id)
+        return results.find((item) => item.login.username === id)
     }
     
     return (
-        <div>
-            
+        <div style={{display: "flex", justifyContent: "center"}}>
+            <ul>
+            {user ? <h1 className="detailName">{user.name.first} {user.name.last}</h1> : null}
+            <h2 style={{color: "white"}}>Phone:</h2>
+            {user ? <h1 className="detailPhone">{user.cell}</h1> : null}
+            </ul>
         </div>
     )
 }

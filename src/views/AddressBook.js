@@ -1,17 +1,21 @@
-import { useEffect, useState } from "react";
-import axios from 'axios';
 import { Link } from "react-router-dom"
+
+import './AddressBook.css'
 
 const AddressBook = ({results}) => {
 
     return (
         <>     
-            <h2 style={{marginLeft: "10px"}}>Address Book:</h2>
+            <h2 className="title">Address Book:</h2>
+
+            <div className="legend">
+                <li>To access the user details click on it's name.</li>
+            </div>
 
             {results.map((d, i) => (
-                <ul>
-                    <h3 key={i}>
-                        <Link to={`/userDetails/${d.id.value}`}>{d.name.first} {d.name.last}</Link>
+                <ul className="userLink" key={i}>
+                    <h3>
+                        <Link to={`/userDetails/${d.login.username}`}>{d.name.first} {d.name.last}</Link>
                     </h3>
                 </ul>
             ))}
