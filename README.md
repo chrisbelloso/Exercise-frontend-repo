@@ -5,17 +5,18 @@
 - Fork this repo
 - Clone this repo
 
+```shell
+$ cd frontend
+$ npm install
+$ npm start
+```
+
 ### Install necessary packages
 
 ```shell
 $ npm install react-router react-router-dom axios 
 ```
-- To see your current development, enter the "Frontend" file and start the app
 
-```shell
-$ cd frontend
-$ npm start
-```
 
 ## Summary of the assignment
 ### Approach
