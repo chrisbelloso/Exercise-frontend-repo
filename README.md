@@ -1,4 +1,4 @@
-# Address Book Frontend Challenge (Nuvalence)
+# "Address Book" Frontend Challenge (Nuvalence)
 
 ## Run the code
 
@@ -34,5 +34,5 @@ Also, add more CSS, bootstrap and a search bar to look for an specific user.
 - This additional features would've probably taken me about one day. 
 
 ## Deployment
-I took the time to deployed it on netlify for testing purposes. :)
+I took the time to deploy it on netlify for testing purposes. :)
 - https://sleepy-volhard-62e8f8.netlify.app
