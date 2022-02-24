@@ -1,5 +1,5 @@
 // IMPORTS
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router";
 
 import './UserDetails.css'
@@ -10,9 +10,12 @@ export default function UserDetails({results}) {
     const { id } = useParams();
 
     const [user, setUser] = useState()
+    const getRef = useRef()
+
+    getRef.current = getUser()
 
     useEffect(() => {
-        const foundUser = getUser()
+        const foundUser = getRef.current
         setUser(foundUser)       
     }, [id])
 
