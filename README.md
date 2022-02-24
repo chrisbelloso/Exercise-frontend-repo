@@ -39,3 +39,4 @@ Given more time I would've added more details to the selected user. Such as:
 
 Also, add more CSS, bootstrap and a search bar to look for an specific user. 
 - This additional features would've probably taken me about one day. 
+# nuvalence-excersice
