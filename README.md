@@ -11,13 +11,6 @@ $ npm install
 $ npm start
 ```
 
-### Install necessary packages
-
-```shell
-$ npm install react-router react-router-dom axios 
-```
-
-
 ## Summary of the assignment
 ### Approach
 - My Approach to this assignment was to do an Address Book that I would've like to use my self. Not just accomplishing the minimum requirements, but being able to execute functional and concise code for dynamic 
