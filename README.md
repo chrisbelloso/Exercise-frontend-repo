@@ -1,4 +1,4 @@
-# Address Book Frontend Challenge (Nuvalence)
+# "Address Book" Frontend Challenge (Nuvalence)
 
 ## Run the code
 
@@ -10,13 +10,6 @@ $ cd frontend
 $ npm install
 $ npm start
 ```
-
-### Install necessary packages
-
-```shell
-$ npm install react-router react-router-dom axios 
-```
-
 
 ## Summary of the assignment
 ### Approach
@@ -39,4 +32,7 @@ Given more time I would've added more details to the selected user. Such as:
 
 Also, add more CSS, bootstrap and a search bar to look for an specific user. 
 - This additional features would've probably taken me about one day. 
-# nuvalence-excersice
+
+## Deployment
+I took the time to deploy it on netlify for testing purposes. :)
+- https://sleepy-volhard-62e8f8.netlify.app
