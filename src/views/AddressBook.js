@@ -15,14 +15,14 @@ const AddressBook = ({results}) => {
             </div>
 
             <div className="userLinkContainer">
-            {results.map((d, i) => (
-                <ul className="userLink" key={i}>
-                    <h3>
-                        <Link to={`/userDetails/${d.login.username}`}>{d.name.first} {d.name.last}</Link>
-                    </h3>
-                </ul>
-            ))}
-                </div>
+                {results.map((d, i) => (
+                    <ul className="userLink" key={i}>
+                        <p>
+                            <Link to={`/userDetails/${d.login.username}`}>{d.name.first} {d.name.last}</Link>
+                        </p>
+                    </ul>
+                ))}
+            </div>
         </>
     )   
 }
