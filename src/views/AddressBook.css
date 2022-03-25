@@ -1,17 +1,40 @@
 body {
-  background-color: rgb(51, 50, 50);
+  background-color: rgb(9, 81, 163);
 }
 
 .title {
-  margin-left: 20px;
-  color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: rgb(9, 81, 163);
+  background-color: white;
+  height: 100px;
+  margin: 0px;
+  padding-left: 40px;
+  font-size: 40px;
 }
 
 .legend {
-  margin-left: 40px;
+  background-color: rgb(105, 116, 129);
+  padding-left: 40px;
   color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.userLinkContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 40px;
 }
 
 .userLink a {
-  color: rgb(169, 78, 255);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(150, 130, 130);
 }

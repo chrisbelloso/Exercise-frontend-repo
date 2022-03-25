@@ -6,12 +6,15 @@ const AddressBook = ({results}) => {
 
     return (
         <>     
+        <div>
             <h2 className="title">Address Book:</h2>
+        </div>
 
             <div className="legend">
                 <li>To access the user details click on it's name.</li>
             </div>
 
+            <div className="userLinkContainer">
             {results.map((d, i) => (
                 <ul className="userLink" key={i}>
                     <h3>
@@ -19,6 +22,7 @@ const AddressBook = ({results}) => {
                     </h3>
                 </ul>
             ))}
+                </div>
         </>
     )   
 }
